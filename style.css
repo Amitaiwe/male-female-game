@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: beige;
+}
+#container{
+    width: 450px;
+    height: 150px;
+    border: 1px solid black;
+    background-image: url(bgIMG.jpg);
+    margin: 20px auto;
+}
+#character{
+    width: 30px;
+    height: 40px;
+    position: relative;
+    top: 85px;
+}
+.jumping{
+    animation: jump 0.5s;
+}
+#block{
+    width: 10px;
+    height: 20px;
+    position: relative;
+    top: 60px;
+    left: 440px;
+    animation: block 2s infinite linear;
+}
+#score{
+    width: 40px;
+    height: 20px;
+    position: relative;
+    top: 10px;
+    left: 440px;
+    text-decoration-style: double;
+}
+@keyframes block{
+    0%{left:440px;}
+    100%{left: -30px;}
+}
+@keyframes jump{
+    0%{top: 110px;}
+    40%{top: 60px;}
+    60%{top: 60px;}
+    100%{top: 110px;}
+}
